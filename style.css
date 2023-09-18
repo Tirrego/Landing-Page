@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Opens Sans", sans-serif;
+    background-color: white;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+}
+
+.container {
+    margin: 2rem 6rem;
+    background-image: url("images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.logo {
+    width: 12rem;
+}
+
+header .btn {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+
+}
+
+.inhalt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+    
+}
+
+.text {
+    padding-top:1.5rem;
+    width: 80%;
+}
+
+
+main p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.inhalt .btn {
+    margin-top: 2rem;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 20px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+}
+
+main img {
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 6rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    }
+
+.box-img{
+    flex: 50%;
+    text-align: center;
+}
+
+.box-img img {
+    width: 100%;
+    max-width: 35rem;
+    margin: 2rem 0rem;
+    }
+
+.box-content {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+}
+
+.box-content h2 {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+.box-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: hsl(208, 11%, 55%);
+}
+
+.change {
+    order: 2;
+}
+
+.big-button {
+    width: 35rem;
+    margin: 3rem auto;
+    background-color: white;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    text-align: center;
+    position: relative;
+    top:9rem;
+    border-radius: 20px;
+
+}
+
+.big-button h2 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.big-button button {
+    width: 14rem;
+    height: 3rem;
+    border-radius: 20px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+
+.footer-boxen {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 4rem;
+    
+}
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3333%;
+    
+}
+
+.footer-box p {
+    padding-left: 1rem;
+    margin: 0.5rem 0rem;
+}
+
+.footer-box i {
+    padding-left: 1rem;
+    margin: 0.5rem 0rem;
+}
+
+.social-box {
+    display: flex;
+    
+}
+
+.footer-logo {
+    width: 12rem;
+    margin: 6rem 4rem 0rem;
+    
+}
+
+.white-filter {
+    filter: invert(99%) sepia(2%) saturate(4%) hue-rotate(188deg) brightness(104%) contrast(100%);
+}
+
+.media {
+    flex-direction: row;
+
+}
+
+.left-space {
+   padding-left: 6rem;
+}
+
+.copyright {
+    text-align: right;
+    padding-right: 2rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .inhalt {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .img-container {
+        margin: 4rem 0rem;
+    }
+
+    .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .box-content {
+            padding: 3rem 0rem;
+            order: 2;
+        }
+
+        .container {
+            margin: 0;
+        }
+
+        .text {
+            width: 100%;
+        }
+
+        .footer-logo {
+            margin-top: 18rem;
+        }
+
+        .footer-boxen {
+            flex-direction: column;
+        }
+
+        .left-space {
+            padding: 3rem 0rem;
+        }
+
+}
+
+
+
+
+
+
